@@ -71,7 +71,7 @@
     
     <div class="not-prose flex flex-col md:flex-row gap-8 md:items-end">
         <div class="flex-1">
-            <p class="mb-4 text-balance">Solve the white cross by putting the 4 white edges next to the white center. The dimgray colors mean we don't care what color that piece is right now.</p>
+            <p class="mb-4 text-balance">Solve the white cross by putting the 4 white edges next to the white center. The gray colored cubes mean we don't care what color that piece is right now.</p>
 
             <Cube size="w-48">
                 <Cubie color="dimgray"></Cubie>
@@ -411,7 +411,7 @@
 
     {@render alg("F R U R' U' F'")}
 
-    <p>Next you want to get the yellow edges touching their correct centers. You'll have at least two edges touching the correct center already. You'll probably need to rotate the top layer some to find them. Rotate the cube until you have two correct edges in the front and back of the top layer, or the right and back of the top layer. If all 4 edges are already correct, you skipped a step! Nice!</p>
+    <p>Next you want to get the yellow edges touching their correct centers. You'll have at least two edges touching the correct center already. You'll probably need to rotate the top layer some to find them. Rotate the top face with {@render inlineAlg("U")} moves until you have two correct edges on the front and back, or two correct edges on the right and back of the top layer. If all 4 edges are already correct, you skipped a step! Nice!</p>
 
     <div class="not-prose flex flex-col md:flex-row gap-8 md:items-end mb-8">
         <div class="flex-1">
